@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TextView for displaying name and roll number -->
+    <TextView
+        android:id="@+id/name_rollno_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saravanan R [21074]"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#000000" />
+
+    <FrameLayout
+        android:id="@+id/drawing_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/brush_size_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/brush_sizes" />
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- GridLayout for the color palette at the bottom -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#cccccc"
+            android:columnCount="6"
+            android:gravity="center"
+            android:padding="8dp"
+            android:rowCount="2">
+
+            <!-- Color icons in grid format -->
+            <ImageView
+                android:id="@+id/colorBrown"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#8B4513"
+                android:contentDescription="Brown Color" />
+
+            <ImageView
+                android:id="@+id/colorRed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#ff0000"
+                android:contentDescription="Red Color" />
+
+            <ImageView
+                android:id="@+id/colorOrange"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#ffa500"
+                android:contentDescription="Orange Color" />
+
+            <ImageView
+                android:id="@+id/colorYellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#ffff00"
+                android:contentDescription="Yellow Color" />
+
+            <ImageView
+                android:id="@+id/colorGreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#008000"
+                android:contentDescription="Green Color" />
+
+            <ImageView
+                android:id="@+id/colorTeal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#008080"
+                android:contentDescription="Teal Color" />
+
+            <ImageView
+                android:id="@+id/colorBlue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#0000ff"
+                android:contentDescription="Blue Color" />
+
+            <ImageView
+                android:id="@+id/colorPurple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#800080"
+                android:contentDescription="Purple Color" />
+
+            <ImageView
+                android:id="@+id/colorPink"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#FF69B4"
+                android:contentDescription="Pink Color" />
+
+            <ImageView
+                android:id="@+id/colorWhite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#ffffff"
+                android:contentDescription="White Color" />
+
+            <ImageView
+                android:id="@+id/colorGray"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#808080"
+                android:contentDescription="Gray Color" />
+
+            <ImageView
+                android:id="@+id/colorBlack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#000000"
+                android:contentDescription="Black Color" />
+
+        </GridLayout>
+
+        <!-- Clear button -->
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <!-- Color picker button -->
+        <Button
+            android:id="@+id/color_picker_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color Picker" />
+    </LinearLayout>
+</LinearLayout>
